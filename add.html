@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Kendaraan App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+      .form-control{
+          width: 300px;
+      }
+  
+      .form-select{
+          width: 300px;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4 text-center">
+            <h1>Data Kendaraan App</h1>
+            <small>by <a href="https://github.com/M-A-Pei" target="_blank">Muhammad Abdullah Syafii</a></small>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 border border-dark px-4 py-2" id="contentBar">
+            
+            <form action="" class="d-flex flex-wrap">
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">no registrasi kendaraan</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">nama pemilik</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">merk kendaraan</label>
+                        <input type="text" class="form-control border border-dark">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">alamat pemilik kendaraan</label>
+                        <textarea rows="6" class="form-control border border-dark"></textarea>
+                    </div>
+                </div>
+            
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">tahun pembuatan</label>
+                        <input type="text" class="form-control border border-dark" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">kapasitas silinder</label>
+                        <input type="text" class="form-control border border-dark" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">warna kendaraan</label>
+                        <select class="form-select border border-dark">
+                            <option selected>pilih warna</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">bahan bakar</label>
+                        <input type="text" class="form-control border border-dark" />
+                    </div>
+                </div>
+            
+                <div class="col-lg-12">
+                    <button class="btn btn-primary px-5">simpan</button>
+                    <a href="./index.html" class="btn btn-secondary px-5">kembali</a>
+                </div>
+            </form>            
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
