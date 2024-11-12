@@ -24,52 +24,55 @@
         <div class="row">
             <div class="col-lg-12 border border-dark px-4 py-2" id="contentBar">
             
-            <form action="" class="d-flex flex-wrap">
+            <form class="d-flex flex-wrap" id="addForm">
                 <div class="col-lg-6">
                     <div class="mb-3">
-                        <label class="form-label fw-bold">no registrasi kendaraan</label>
-                        <input type="text" class="form-control border border-dark">
-                    </div>
-                    <div class="mb-3">
                         <label class="form-label fw-bold">nama pemilik</label>
-                        <input type="text" class="form-control border border-dark">
+                        <input type="text" name="namaPemilik" class="form-control border border-dark" id="nameInput">
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">merk kendaraan</label>
-                        <input type="text" class="form-control border border-dark">
+                        <input type="text" name="merk" class="form-control border border-dark" id="merkInput">
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">alamat pemilik kendaraan</label>
-                        <textarea rows="6" class="form-control border border-dark"></textarea>
+                        <textarea rows="6" name="alamat" class="form-control border border-dark" id="alamatInput"></textarea>
                     </div>
                 </div>
             
                 <div class="col-lg-6">
                     <div class="mb-3">
                         <label class="form-label fw-bold">tahun pembuatan</label>
-                        <input type="text" class="form-control border border-dark" />
+                        <input type="text" name="tahun" class="form-control border border-dark" id="tahunInput"/>
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">kapasitas silinder</label>
-                        <input type="text" class="form-control border border-dark" />
+                        <input type="text" name="kapasitas" class="form-control border border-dark" id="kapasitasInput"/>
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">warna kendaraan</label>
-                        <select class="form-select border border-dark">
+                        <select name="warna" class="form-select border border-dark" id="warnaInput">
                             <option selected>pilih warna</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="Merah">Merah</option>
+                            <option value="Hitam">Hitam</option>
+                            <option value="AbuAbu">AbuAbu</option>
+                            <option value="Biru">Biru</option>
                           </select>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-bold">bahan bakar</label>
-                        <input type="text" class="form-control border border-dark" />
+                        <label class="form-label fw-bold">Bahan Bakar</label>
+                        <select name="warna" class="form-select border border-dark" id="bahanBakarInput">
+                            <option selected>pilih bahan bakar</option>
+                            <option value="Merah">Bensin</option>
+                            <option value="Listrik">Listrik</option>
+                            <option value="Diesel">Diesel</option>
+                            <option value="Solar">Solar</option>
+                          </select>
                     </div>
                 </div>
             
                 <div class="col-lg-12">
-                    <button class="btn btn-primary px-5">simpan</button>
+                    <button class="btn btn-primary px-5" type="submit">simpan</button>
                     <a href="./index.html" class="btn btn-secondary px-5">kembali</a>
                 </div>
             </form>            
@@ -77,7 +80,7 @@
         </div>
     </div>
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/logic.js"></script>
+    <script src="./js/addKendaraan.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
