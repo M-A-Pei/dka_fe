@@ -30,9 +30,9 @@ $("#searchBtn").click(function (e) {
                       <td>${kendaraan.warna}</td>
                       <td>${kendaraan.bahanBakar}</td>
                       <td>
-                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DetailModal"  class="btn btn-primary">detail</Button>
-                        <a href="./add.html?noRegistrasi=${kendaraan.noRegistrasi}" class="btn btn-warning">edit</a>
-                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DeleteModal" class="btn btn-danger">delete</Button>
+                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DetailModal"  class="btn btn-primary">Detail</Button>
+                        <a href="./add.html?noRegistrasi=${kendaraan.noRegistrasi}" class="btn btn-warning">Edit</a>
+                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DeleteModal" class="btn btn-danger">Delete</Button>
                       </td>
                 </tr>
             `)
@@ -118,9 +118,9 @@ function addAllKendaraan() {
                       <td>${kendaraan.warna}</td>
                       <td>${kendaraan.bahanBakar}</td>
                       <td>
-                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DetailModal"  class="btn btn-primary">detail</Button>
-                        <a href="./add.html?noRegistrasi=${kendaraan.noRegistrasi}" class="btn btn-warning">edit</a>
-                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DeleteModal" class="btn btn-danger">delete</Button>
+                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DetailModal"  class="btn btn-primary">Detail</Button>
+                        <a href="./add.html?noRegistrasi=${kendaraan.noRegistrasi}" class="btn btn-warning">Edit</a>
+                        <Button data-bs-toggle="modal" data-bs-target="#${kendaraan.noRegistrasi}DeleteModal" class="btn btn-danger">Delete</Button>
                       </td>
                 </tr>
             `)
