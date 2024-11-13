@@ -12,7 +12,7 @@ $(window).on("load", function () {
         $("#addOrEditBtn").css("background-color", "orange");
     }
 
-    fetch(`http://localhost:8080/api/kendaraan/${noRegistrasi}`)
+    fetch(`https://dkabe-production.up.railway.app/api/kendaraan/${noRegistrasi}`)
     .then((response) => {
         if(!response.ok){
             throw new Error
@@ -52,7 +52,7 @@ $("#addForm").on("submit", function (e) {
 
         if(noRegistrasi != null){
             data.append("noRegistrasi", noRegistrasi)
-            fetch("http://localhost:8080/api/kendaraan", {
+            fetch("https://dkabe-production.up.railway.app/api/kendaraan", {
                 method: "PUT",
                 body: data,
             }).then((response) => {
@@ -67,7 +67,7 @@ $("#addForm").on("submit", function (e) {
                 $(location).attr('href', "./index.html");
             })
         }else{
-            fetch("http://localhost:8080/api/kendaraan", {
+            fetch("https://dkabe-production.up.railway.app/api/kendaraan", {
                 method: "POST",
                 body: data,
             }).then((response) => {

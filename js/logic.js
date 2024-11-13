@@ -9,7 +9,7 @@ $("#searchBtn").click(function (e) {
     if(noRegistrasi == "" && nama == ""){
         addAllKendaraan();
     }
-    fetch(`http://localhost:8080/api/kendaraan/search?noRegistrasi=${noRegistrasi}&namaPemilik=${nama}`)
+    fetch(`https://dkabe-production.up.railway.app/api/kendaraan/search?noRegistrasi=${noRegistrasi}&namaPemilik=${nama}`)
     .then((response) => {
         if(!response.ok){
             throw new Error
@@ -43,7 +43,7 @@ $("#searchBtn").click(function (e) {
 
 
 function addAllKendaraan() {
-    fetch("http://localhost:8080/api/kendaraan")
+    fetch("https://dkabe-production.up.railway.app/api/kendaraan")
     .then((response) => {
         if(!response.ok){
             throw new Error
@@ -129,7 +129,7 @@ function addAllKendaraan() {
 }
 
 function deleteKendaraan(noRegistrasi) {
-    fetch(`http://localhost:8080/api/kendaraan?noRegistrasi=${noRegistrasi}`, {
+    fetch(`https://dkabe-production.up.railway.app/api/kendaraan?noRegistrasi=${noRegistrasi}`, {
         method: "DELETE"
     }).then((response) => {
         if(!response.ok){
